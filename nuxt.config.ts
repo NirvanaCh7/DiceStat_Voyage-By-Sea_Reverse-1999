@@ -7,12 +7,11 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  // ssr: true,
-  // target: 'static',
+  ssr: true,
 
-  // router: {
-  //   base: '/DiceStat_Voyage-By-Sea_Reverse-1999/', 
-  // },
+  app: {
+    baseURL: '/DiceStat_Voyage-By-Sea_Reverse-1999/', // 关键：让资源路径正确
+  },
 
   modules: ['nuxt-echarts', '@nuxtjs/i18n','shadcn-nuxt'],
   shadcn: {
@@ -26,7 +25,7 @@ export default defineNuxtConfig({
       // { code: 'en', iso: 'en', file: 'en.json', name: 'English' },
       { code: 'zh-hans', iso: 'zh-hans', file: 'zh-hans.json', name: '简体中文' },
     ],
-    defaultLocale: 'zh-han',
-    strategy: 'prefix',
+    defaultLocale: 'zh-hans',
+    strategy: 'prefix-and-default',
   },
 })
