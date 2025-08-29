@@ -26,6 +26,6 @@ export default defineNuxtConfig({
       { code: 'zh-hans', iso: 'zh-hans', file: 'zh-hans.json', name: '简体中文' },
     ],
     defaultLocale: 'zh-hans',
-    strategy: 'prefix-and-default',
+    strategy: "prefix_and_default"
   },
 })

@@ -7,6 +7,14 @@
     <NuxtRouteAnnouncer />
     <main class="flex-1 flex justify-center items-center">
       <div class="flex gap-4 items-center">
+        <NumberField>
+          <Label>Age</Label>
+          <NumberFieldContent>
+            <NumberFieldDecrement />
+            <NumberFieldInput />
+            <NumberFieldIncrement />
+          </NumberFieldContent>
+        </NumberField>
         <Card v-for="(card, idx) in cards" :key="card.id">
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
