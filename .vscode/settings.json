@@ -1,5 +1,10 @@
 {
     "debug.javascript.defaultRuntimeExecutable": {
         "pwa-node": "/home/nirvanach7/.local/share/mise/shims/node"
-    }
+    },
+    "i18n-ally.localesPaths": [
+        "i18n",
+        "i18n/locales"
+    ],
+    "i18n-ally.sourceLanguage": "zh-hans"
 }
